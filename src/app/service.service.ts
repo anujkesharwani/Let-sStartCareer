@@ -16,14 +16,7 @@ export class ServiceService {
 }
 userlogin(data :any)
 {
-  this.http.post<any>("http://localhost:7000/userlogin",data).subscribe((res)=>{
-    if(res==null) {
-      console.log("epinv")
-    }
-    else{
-      console.log(res)
-    }
-  })
+  return this.http.post<any>("http://localhost:7000/userlogin",data)
 }
 addPost(data:any){
   return this.http.post<any>("http://localhost:7000/addPost",data)
