@@ -10,20 +10,20 @@ export class ServiceService {
 
   signUp(data :any)
 {
-  this.http.post<any>("http://localhost:7000/signUp",data).subscribe((res)=>{
+  this.http.post<any>("https://vercel-api-three-pearl.vercel.app/signUp",data).subscribe((res)=>{
 
   })
 }
 userlogin(data :any)
 {
-  return this.http.post<any>("http://localhost:7000/userlogin",data)
+  return this.http.post<any>("https://vercel-api-three-pearl.vercel.app/userlogin",data)
 }
 addPost(data:any){
-  return this.http.post<any>("http://localhost:7000/addPost",data)
+  return this.http.post<any>("https://vercel-api-three-pearl.vercel.app/addPost",data)
 
  
 }
 feed(){
-  return this.http.get("http://localhost:7000/feed")
+  return this.http.get("https://vercel-api-three-pearl.vercel.app/feed")
 }
 }
