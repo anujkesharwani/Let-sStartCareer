@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ServiceService } from './service.service';
+import { ClassXIIComponent } from './class-xii/class-xii.component';
+import { ClassXIComponent } from './class-xi/class-xi.component';
+import { ClassXComponent } from './class-x/class-x.component';
+import { GraduationComponent } from './graduation/graduation.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { ServiceService } from './service.service';
     ContactComponent,
     AboutComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ClassXIIComponent,
+    ClassXIComponent,
+    ClassXComponent,
+    GraduationComponent
   ],
   imports: [
     BrowserModule,
